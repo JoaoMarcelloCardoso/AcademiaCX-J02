@@ -5,3 +5,4 @@ O que inclui:
 - aplicação rodando
 - models Carrinho, Cliente, Endereco, Item, Preco, Produto
 - H2 configurado
+- import.sql pra preencher os dados do banco
