@@ -8,31 +8,40 @@ public class UserModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String name;
+    private long id;
+
+    private String nome;
+
+    private String cpf;
+
     private String email;
 
     @ManyToOne
-    @JoinColumn(name = "department_id")
-    private DepartmentModel departmentModel;
+    @JoinColumn(name = "role_id")
+    private RoleModel roleModel;
 
-    public UserModel() {
-    }
-
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getNome() {
+        return nome;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 
     public String getEmail() {
@@ -43,11 +52,11 @@ public class UserModel {
         this.email = email;
     }
 
-    public DepartmentModel getDepartmentModel() {
-        return departmentModel;
+    public RoleModel getRoleModel() {
+        return roleModel;
     }
 
-    public void setDepartmentModel(DepartmentModel departmentModel) {
-        this.departmentModel = departmentModel;
+    public void setRoleModel(RoleModel roleModel) {
+        this.roleModel = roleModel;
     }
 }
