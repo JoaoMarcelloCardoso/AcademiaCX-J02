@@ -13,19 +13,19 @@ insert into tb_produto (id,sku, nome,quantidade_total) values (3,'chinelo_5','Ch
 -- Endereço
 -- Esses Códigos são utilizados na emissão de Documentos Fiscais Eletrônicos (NFC-e, NF-e, CT-e, MDF-e e CF-e) e são informados no campo cUF.
 insert into tb_endereco(id,cep,logradouro,bairro,cidade,numero_endereco,uf,cliente_id)
-values(1,81520370,'Rua das Tropas','Guabirotuba','Curitiba',100, 41, 1);
+values(1,'81520370','Rua das Tropas','Guabirotuba','Curitiba','100', 41, 1);
 insert into tb_endereco(id,cep,logradouro,bairro,cidade,numero_endereco,uf,cliente_id)
-values(2,82990095,'Rua Arthur S. Correia de Freitas','Cajuru','Curitiba','350', 41, 1);
+values(2,'82990095','Rua Arthur S. Correia de Freitas','Cajuru','Curitiba','350', 41, 1);
 
 insert into tb_endereco(id,cep,logradouro,bairro,cidade,numero_endereco,uf,cliente_id)
-values(3,79103040,'Rua Guaianas','Vila Sílvia Regina','Campo Grande','121', 50, 2);
+values(3,'79103040','Rua Guaianas','Vila Sílvia Regina','Campo Grande','121', 50, 2);
 insert into tb_endereco(id,cep,logradouro,bairro,cidade,numero_endereco,uf,cliente_id)
-values(4,79071117,'Rua Izabelino Hipolito Novaes','Jardim Nashiville','Campo Grande','520', 50, 2);
+values(4,'79071117','Rua Izabelino Hipolito Novaes','Jardim Nashiville','Campo Grande','520', 50, 2);
 
 insert into tb_endereco(id,cep,logradouro,bairro,cidade,numero_endereco,uf,cliente_id)
-values(5,13303540,'Rua Pastor Benevides dos Santos','Itu Novo Centro','Itu',234, 35, 3);
+values(5,'13303540','Rua Pastor Benevides dos Santos','Itu Novo Centro','Itu','234', 35, 3);
 insert into tb_endereco(id,cep,logradouro,bairro,cidade,numero_endereco,uf,cliente_id)
-values(6,13301762,'Rua Antônio de Paula Leite','Chácaras Primavera','Itu',1320, 35, 3);
+values(6,'13301762','Rua Antônio de Paula Leite','Chácaras Primavera','Itu','1320', 35, 3);
 
 
 -- Preço por cliente
