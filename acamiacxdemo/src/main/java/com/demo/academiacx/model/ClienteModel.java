@@ -45,4 +45,44 @@ public class ClienteModel {
     public void setId(Long id) {
         this.id = id;
     }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public List<EnderecoModel> getEnderecos() {
+        return enderecos;
+    }
+
+    public void setEnderecos(List<EnderecoModel> enderecos) {
+        this.enderecos = enderecos;
+    }
+
+    public List<PrecoModel> getPrecos() {
+        return precos;
+    }
+
+    public void setPrecos(List<PrecoModel> precos) {
+        this.precos = precos;
+    }
+
+    public List<CarrinhoModel> getCarrinhos() {
+        return carrinhos;
+    }
+
+    public void setCarrinhos(List<CarrinhoModel> carrinhos) {
+        this.carrinhos = carrinhos;
+    }
 }

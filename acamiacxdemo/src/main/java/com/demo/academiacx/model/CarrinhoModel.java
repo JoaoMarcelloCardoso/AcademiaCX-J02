@@ -3,7 +3,8 @@ package com.demo.academiacx.model;
 import jakarta.persistence.*;
 
 import java.math.BigDecimal;
-import java.time.LocalDate;
+import java.sql.Timestamp;
+import java.sql.Timestamp;
 
 @Entity
 @Table(name = "tb_carrinho")
@@ -15,7 +16,7 @@ public class CarrinhoModel {
 
     private BigDecimal total;
 
-    private LocalDate horaCompra;
+    private Timestamp horaCompra;
 
     @ManyToOne
     @JoinColumn(name = "cliente_id")
@@ -23,7 +24,7 @@ public class CarrinhoModel {
 
 
 
-    public CarrinhoModel(Long id, BigDecimal total, LocalDate horaCompra, ClienteModel cliente) {
+    public CarrinhoModel(Long id, BigDecimal total, Timestamp horaCompra, ClienteModel cliente) {
         this.id = id;
         this.total = total;
         this.horaCompra = horaCompra;
@@ -42,11 +43,11 @@ public class CarrinhoModel {
         this.total = total;
     }
 
-    public LocalDate getHoraCompra() {
+    public Timestamp getHoraCompra() {
         return horaCompra;
     }
 
-    public void setHoraCompra(LocalDate horaCompra) {
+    public void setHoraCompra(Timestamp horaCompra) {
         this.horaCompra = horaCompra;
     }
 

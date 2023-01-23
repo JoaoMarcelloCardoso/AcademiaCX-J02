@@ -14,6 +14,8 @@ public class ProdutoModel {
 
     private String nome;
 
+    private Integer quantidadeTotal;
+
     public ProdutoModel(Long id, String sku, String nome) {
         this.id = id;
         this.sku = sku;
@@ -22,6 +24,14 @@ public class ProdutoModel {
 
     public ProdutoModel() {
 
+    }
+
+    public Integer getQuantidadeTotal() {
+        return quantidadeTotal;
+    }
+
+    public void setQuantidadeTotal(Integer quantidadeTotal) {
+        this.quantidadeTotal = quantidadeTotal;
     }
 
     public String getSku() {
